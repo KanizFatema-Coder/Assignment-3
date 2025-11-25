@@ -1,0 +1,55 @@
+
+:root{
+  --accent:#0ea5a4;
+  --dark:#0f1724;
+}
+*{
+  box-sizing:border-box;
+}
+body{
+  font-family:Inter, system-ui, Arial, sans-serif;
+  scroll-behavior:smooth;
+}
+
+.hero{
+  min-height:70vh;background:linear-gradient(180deg, rgba(14,165,164,0.12), rgba(14,165,164,0.04)),
+  url('../img/hero1.png') center/cover no-repeat;padding-top:120px;
+}
+.accent{
+  color:var(--accent)
+}
+.avatar{
+  width:220px;
+  height:220px;
+  background: url('../img/profile1.avif') center/cover no-repeat;
+  border:8px solid white;
+  border-radius: 50%;
+}
+/*.avatar{
+  width:220px;height:220px;background:linear-gradient(135deg,var(--accent),#6ee7b7);border:8px solid white;
+}*/
+.section-title{
+  margin-bottom:1.25rem;
+}
+.projects-grid .card img{
+  height:200px;object-fit:cover;
+}
+.progress{
+  height:12px;background:#e9ecef;
+}
+.progress-bar{
+  display:flex;align-items:center;justify-content:center;font-size:.8rem;
+}
+.filter-btn.active{
+  background:var(--dark);color:white;
+}
+.icon{
+  font-size:2rem;
+}
+.card .stretched-link{
+  color:var(--accent);
+}
+@media (max-width:768px){
+  .avatar{width:150px;height:150px}
+  .hero{padding-top:100px}
+}
